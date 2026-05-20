@@ -175,6 +175,3 @@ XSS检测模块新增对 Referer 和 Cookie 、JSON格式的检测支持，�
 ## 免责声明 
 
 请勿利用本文提供的技术从事非法活动。文章仅供学习目的使用，所涉及的工具仅限于安全研究和学习之用。若将工具用于其他目的，使用者须承担全部法律及连带责任。作者及发布者不承担任何法律及连带责任。
-
-编译：
-New-Item -ItemType Directory -Force -Path "temp_orig" | Out-Null; Push-Location temp_orig; jar xf ..\TLA.Watcher.V1.3.jar; Pop-Location; if (Test-Path "out") { Remove-Item -Recurse -Force "out" }; New-Item -ItemType Directory -Force -Path "out" | Out-Null; Get-ChildItem -Path "temp_orig" -Exclude "burp","ui","META-INF" | Copy-Item -Destination "out" -Recurse -Force; javac -encoding utf-8 -d out src\burp\*.java src\ui\*.java; jar cvfm TLA_Watcher.jar src/META-INF/MANIFEST.MF -C out .; Remove-Item -Recurse -Force "temp_orig"
