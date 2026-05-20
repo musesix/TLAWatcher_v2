@@ -8,6 +8,16 @@ Java版本8
 
 
 
+
+
+## TLA_Watcher_二开v2（2026.05.20）
+
+✅优化：优化了ui的筛选功能
+
+✅删除：删除了保存成功提示弹窗，优化使用体验
+
+✅新增：编辑数据包功能，新增右键复制url功能
+
 ## 二开说明V0.1（2026.03.31）
 
 Respect and thanks to SharpKean - https://github.com/SharpKean/Brup_TLA
